@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fmt"
+	"net/http"
 
 	_ "github.com/jakecoffman/app/core"
 	_ "github.com/jakecoffman/app/plugin1"
@@ -9,9 +9,9 @@ import (
 )
 
 func init() {
-	fmt.Println("App Init")
+
 }
 
 func main() {
-	fmt.Println("App main")
+	http.ListenAndServe("localhost:8080", nil)
 }
