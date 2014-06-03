@@ -3,9 +3,9 @@ package main
 import (
 	"net/http"
 
-	_ "github.com/jakecoffman/app/core"
-	_ "github.com/jakecoffman/app/plugin1"
-	_ "github.com/jakecoffman/app/plugin2"
+	_ "github.com/jakecoffman/go-pluggable-example/core"
+	_ "github.com/jakecoffman/go-pluggable-example/plugin1"
+	_ "github.com/jakecoffman/go-pluggable-example/plugin2"
 )
 
 func init() {

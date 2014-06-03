@@ -3,7 +3,7 @@ package plugin2
 import (
 	"fmt"
 
-	_ "github.com/jakecoffman/app/core"
+	_ "github.com/jakecoffman/go-pluggable-example/core"
 )
 
 func init() {

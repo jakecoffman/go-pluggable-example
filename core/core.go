@@ -36,7 +36,7 @@ func templateOrPanic(data interface{}, w http.ResponseWriter, r *http.Request, f
 	if err != nil {
 		panic(err)
 	}
-	err = t.Execute(w, r)
+	err = t.Execute(w, data)
 	if err != nil {
 		panic(err)
 	}
